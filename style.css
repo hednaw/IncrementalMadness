@@ -1,0 +1,66 @@
+body {
+  background-color: #000000;
+}
+
+font {
+  color: white;
+  font-family: monospace;
+}
+
+#t1 {
+  color: white;
+  font-family: roboto;
+}
+
+#t2 {
+  color: red;
+  font-family: roboto;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+}
+
+span {
+  color: white;
+    font-family: monospace;
+}
+
+#button1{
+    width: 300px;
+    height: 40px;
+}
+#button2{
+    width: 300px;
+    height: 40px;
+}
+#container{
+    text-align: center;
+}
+
+#score {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
+
+#scorelabel {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+
+button {
+  font-size: 20;
+  font-family: monospace;
+}
+
+br {
+    -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
