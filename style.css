@@ -64,3 +64,11 @@ br {
 -ms-user-select: none; 
 user-select: none;
 }
+
+#uptwoon {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+

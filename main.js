@@ -7,6 +7,7 @@ var uptwoprice = 10;
 var cpr = 0;
 var uptwoon = false;
 var x = 8;
+var uptwointerval = 1500;
 document.getElementById("score").innerHTML = clicks;
     document.getElementById("upgrade1").innerHTML = clicksupone;
     document.getElementById("uponeprice").innerHTML = uponeprice;
@@ -60,7 +61,7 @@ function Clickuptwo()
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoon").innerHTML = uptwoon;
-        
+              clicks = clicks - uptwoprice;
     }
     else
     {
@@ -91,7 +92,7 @@ document.body.onkeyup = function(e){
     }
 }
 
-   setInterval(byteworkers, 1000)
+   setInterval(byteworkers, uptwointerval);
 
 function byteworkers () {
    if (uptwoon == true)
@@ -105,4 +106,5 @@ function byteworkers () {
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoon").innerHTML = uptwoon;
+    
 }
