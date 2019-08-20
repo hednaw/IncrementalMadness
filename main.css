@@ -110,7 +110,12 @@ a:hover {
   font-family: monospace;
   text-decoration: none;
 }
-
+a:visited
+{
+    color: white;
+  font-family: monospace;
+  text-decoration: none;
+}
 
 h2{
    color: white;
