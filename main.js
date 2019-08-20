@@ -2,6 +2,7 @@ var clicks = 0;
 var clicksupone = 1;
 var uponeprice = 50;
 
+var version = "pre-alpha 0.3";
 
 var uptwoprice = 10;
 var cpr = 0;
@@ -15,6 +16,7 @@ document.getElementById("score").innerHTML = clicks;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoon").innerHTML = uptwoon;
+    document.getElementById("version").innerHTML = version;
     document.getElementById("clickingarea").onclick =
 function Click()
 {

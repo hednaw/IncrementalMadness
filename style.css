@@ -4,26 +4,29 @@ body {
 
 font {
   color: white;
-  font-family: monospace;
 }
 
 #t1 {
   color: white;
-  font-family: roboto;
+font-family: 'Rubik', sans-serif;
+
 }
 
 #t2 {
   color: red;
-  font-family: roboto;
+font-family: 'Rubik', sans-serif;
+
 }
 
 p {
-  color: white;
+
+color: white;
   font-family: monospace;
 }
 
 span {
-  color: white;
+  
+  color: white
     font-family: monospace;
 }
 
@@ -70,5 +73,20 @@ user-select: none;
 -moz-user-select: none; 
 -ms-user-select: none; 
 user-select: none;
+
+
+opacity: 0.0;
+filter: alpha(opacity=50);
 }
 
+#cpr {
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+
+opacity: 0.0;
+filter: alpha(opacity=50);
+}
