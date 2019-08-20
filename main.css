@@ -44,6 +44,11 @@ span {
     width: 300px;
     height: 40px;
 }
+
+#button3:disabled
+{
+  color: gray;
+}
 #container{
     text-align: center;
 }
@@ -120,4 +125,9 @@ a:visited
 h2{
    color: white;
 font-family: 'Rubik', sans-serif;
+}
+
+#version
+{
+  color: white;
 }

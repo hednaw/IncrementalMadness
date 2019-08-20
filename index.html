@@ -11,7 +11,7 @@
 <body>
 
     <!---- TITLE ------>
-        <center><font size="5"> <h1> <font color="darkblue", id="t1">Incremental</font> <font color="red", id="t2">Madness </font></h1></font></center>
+<center><a href="index.html"><font size="5"> <h1> <font color="darkblue", id="t1">Incremental</font> <font color="red", id="t2">Madness </font></h1></font></a></center>
 
         
         <div id="clickingarea"><center><p unselectable="on", id="scorelabel"><font face="roboto" , size="5">Bytes:</font></p></center>
@@ -28,16 +28,20 @@
          <button onclick="Clickupone()", id=button1>Byte Multiplier</button> 
        <p>Value: <span id="upgrade1">0</span></p> 
        <p>Cost: <span id="uponeprice">0</span></p>
+        <p>Description: Multiplies your Bytes per Click</p>
        
        <button onclick="Clickuptwo()", id="button2">Byte Workers</button>
        <p>Value: <span id="upgrade2">0</span></p>
        <p>Cost: <span id="uptwoprice">0</span></p>
-        
-        
-    
+        <p>Description: Hires a worker, he will will gain Bytes for you automatically </p>
        
-       <p id="cpr"></p>
-       <p id="uptwoon",></p>
+       <button onclick="Clickupthree()", id="button3">Faster Workers</button>
+       <p>Value: <span id="upgrade3">0</span></p>
+       <p>Cost: <span id="upthreeprice">0</span></p>
+        <p>Description: Cuts the time needed to produce Byte by a worker (-100 ms).</p>
+       </div>
+        
+       
        
      <div><center> <p>Version: <span id="version"></span></p>
       <a href="changelog.html">Changelog</a></center></div> 
