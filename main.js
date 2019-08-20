@@ -1,3 +1,5 @@
+
+
 var clicks = 0;
 var clicksupone = 1;
 var uponeprice = 50;

@@ -1,0 +1,118 @@
+body {
+  background-color: #000000;
+}
+
+font {
+  color: white;
+}
+
+#t1 {
+  color: white;
+font-family: 'Rubik', sans-serif;
+
+}
+
+#t2 {
+  color: red;
+font-family: 'Rubik', sans-serif;
+
+}
+
+p {
+
+color: white;
+  font-family: monospace;
+}
+
+span {
+  
+  color: white
+    font-family: monospace;
+}
+
+#button1{
+    width: 300px;
+    height: 40px;
+}
+
+#button3{
+    width: 300px;
+    height: 40px;
+}
+
+#button2{
+    width: 300px;
+    height: 40px;
+}
+#container{
+    text-align: center;
+}
+
+#score {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
+
+#scorelabel {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+
+button {
+  font-size: 20;
+  font-family: monospace;
+}
+
+br {
+    -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+}
+
+#uptwoon {
+  -webkit-user-select: none;      
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none;
+
+
+opacity: 0.0;
+filter: alpha(opacity=50);
+}
+
+#cpr {
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+
+opacity: 0.0;
+filter: alpha(opacity=50);
+}
+
+
+a:link {
+  color: white;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: gray;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+
+h2{
+   color: white;
+font-family: 'Rubik', sans-serif;
+}
