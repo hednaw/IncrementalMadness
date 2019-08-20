@@ -3,15 +3,17 @@ var clicksupone = 1;
 var uponeprice = 50;
 
 
-var uptwoprice = 600;
+var uptwoprice = 10;
 var cpr = 0;
 var uptwoon = false;
 var x = 8;
-    document.getElementById("score").innerHTML = clicks;
+document.getElementById("score").innerHTML = clicks;
     document.getElementById("upgrade1").innerHTML = clicksupone;
     document.getElementById("uponeprice").innerHTML = uponeprice;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
+    document.getElementById("cpr").innerHTML = cpr;
+    document.getElementById("uptwoon").innerHTML = uptwoon;
     document.getElementById("clickingarea").onclick =
 function Click()
 {
@@ -50,14 +52,23 @@ function Clickuptwo()
     if (uptwoon == false)
     {
         uptwoon = true;
+        cpr++
+        document.getElementById("score").innerHTML = clicks;
+    document.getElementById("upgrade1").innerHTML = clicksupone;
+    document.getElementById("uponeprice").innerHTML = uponeprice;
+    document.getElementById("upgrade2").innerHTML = cpr;
+    document.getElementById("uptwoprice").innerHTML = uptwoprice;
+    document.getElementById("cpr").innerHTML = cpr;
+    document.getElementById("uptwoon").innerHTML = uptwoon;
+        
     }
     else
     {
         cpr++
     }
-    
+    uptwoprice = uptwoprice * x;
     click =- uptwoprice;
-    document.getElementById("upgrade2").innerHTML = cpr;
+    document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     
    }
@@ -78,4 +89,20 @@ document.body.onkeyup = function(e){
         
     } 
     }
+}
+
+   setInterval(byteworkers, 1000)
+
+function byteworkers () {
+   if (uptwoon == true)
+   {
+             clicks = clicks + cpr;
+   }
+   document.getElementById("score").innerHTML = clicks;
+    document.getElementById("upgrade1").innerHTML = clicksupone;
+    document.getElementById("uponeprice").innerHTML = uponeprice;
+    document.getElementById("upgrade2").innerHTML = cpr;
+    document.getElementById("uptwoprice").innerHTML = uptwoprice;
+    document.getElementById("cpr").innerHTML = cpr;
+    document.getElementById("uptwoon").innerHTML = uptwoon;
 }
