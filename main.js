@@ -121,7 +121,6 @@ function Clickupthree(){
       clicks = clicks - upthreeprice;
       uptwointerval = uptwointerval - 100;
     document.getElementById("upgrade3").innerHTML = clicksupthree;
-    document.getElementById("debug").innerHTML = uptwointerval;
     window.clearInterval(IntervalOne);
     var IntervalOne = setInterval(byteworkers, uptwointerval);
    }
