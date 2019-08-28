@@ -13,14 +13,20 @@ var cpr = 0;
 var uptwoon = false;
 var x = 8;
 var uptwointerval = 2000;
+
+if (typeof(Storage) == "undefined") {
+   alert("Your browser does not support local storage");
+   
+}
+
 document.getElementById("score").innerHTML = clicks;
     document.getElementById("upgrade1").innerHTML = clicksupone;
     document.getElementById("uponeprice").innerHTML = uponeprice;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("version").innerHTML = version;
+   document.getElementById("uptwoprice").innerHTML = uptwoprice;
     document.getElementById("upgrade3").inneHTML = clicksupthree;
     document.getElementById("upthreeprice").innerHTML = upthreeprice;
-    
     document.getElementById("clickingarea").onclick =
 function Click()
 {
@@ -56,25 +62,32 @@ function Clickuptwo()
 {
    if (clicks >= uptwoprice)
    {
+          document.getElementById("uptwoprice").innerHTML = uptwoprice;
+              clicks = clicks - uptwoprice;
+          uptwoprice = uptwoprice * x;
+    document.getElementById("upgrade2").innerHTML = cpr;
+    document.getElementById("score").innerHTML = clicks;
     if (uptwoon == false)
     {
         uptwoon = true;
         cpr++
         document.getElementById("score").innerHTML = clicks;
-    document.getElementById("upgrade1").innerHTML = clicksupone;
-    document.getElementById("uponeprice").innerHTML = uponeprice;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoon").innerHTML = uptwoon;
-              clicks = clicks - uptwoprice;
     }
     else
     {
         cpr++
+              document.getElementById("score").innerHTML = clicks;
+    document.getElementById("upgrade2").innerHTML = cpr;
+    document.getElementById("uptwoprice").innerHTML = uptwoprice;
+    document.getElementById("cpr").innerHTML = cpr;
+    document.getElementById("uptwoon").innerHTML = uptwoon;
+        uptwoprice = uptwoprice * x;
     }
     uptwoprice = uptwoprice * x;
-    click =- uptwoprice;
     document.getElementById("cpr").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     
@@ -101,6 +114,7 @@ document.body.onkeyup = function(e){
 var IntervalOne = setInterval(byteworkers, uptwointerval);
 
 function byteworkers () {
+ 
    if (uptwoon == true)
    {
              clicks = clicks + cpr;
@@ -117,22 +131,38 @@ function byteworkers () {
 function Clickupthree(){
    if (clicks >= upthreeprice)
    {
+      if (uptwointerval > 0)
+      {
+         clicks = clicks + upthreeprice;
+      }
       clicksupthree = clicksupthree + 1;
       clicks = clicks - upthreeprice;
-      uptwointerval = uptwointerval - 100;
+                 upthreeprice = upthreeprice * x;
+      uptwointerval = uptwointerval - 10;
     document.getElementById("upgrade3").innerHTML = clicksupthree;
     window.clearInterval(IntervalOne);
     var IntervalOne = setInterval(byteworkers, uptwointerval);
+     document.getElementById("interval").innerHTML = uptwointerval;
+         document.getElementById("upthreeprice").innerHTML = upthreeprice;
+
    }
-}
-
-if (uptwointerval == 100)
-{
-   document.getElementById("Button3").disabled = true;
-}
-
-
-function Money()
-{
-   clicks = clicks + 10000000000;
+   
+   function save()
+   {
+      localStorage.setItem("clicks", clicks);
+      localStorage.setItem("upgrade1", clicksupone);
+      localStorage.setItem("upgrade2", cpr);
+      localStorage.setItem("uponeprice", uponeprice);
+      localStorage.setItem("uptwoprice", uptwoprice);
+      localStorage.setItem("upthreeprice", upthreeprice);
+      localStorage.setItem("uptwointerval", uptwointerval);
+      localStorage.setItem("uptwoon", uptwoon);
+      
+   }
+   
+   function load()
+   {
+      clicks = localStorage.getItem("clicks");
+      
+   }
 }
