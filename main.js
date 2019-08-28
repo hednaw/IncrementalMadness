@@ -74,7 +74,7 @@ function Clickuptwo()
         document.getElementById("score").innerHTML = clicks;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
-    document.getElementById("cpr").innerHTML = cpr;
+     
     document.getElementById("uptwoon").innerHTML = uptwoon;
     }
     else
@@ -83,12 +83,12 @@ function Clickuptwo()
               document.getElementById("score").innerHTML = clicks;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
-    document.getElementById("cpr").innerHTML = cpr;
+     
     document.getElementById("uptwoon").innerHTML = uptwoon;
         uptwoprice = uptwoprice * x;
     }
     uptwoprice = uptwoprice * x;
-    document.getElementById("cpr").innerHTML = cpr;
+     
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
     
    }
@@ -124,7 +124,7 @@ function byteworkers () {
     document.getElementById("uponeprice").innerHTML = uponeprice;
     document.getElementById("upgrade2").innerHTML = cpr;
     document.getElementById("uptwoprice").innerHTML = uptwoprice;
-    document.getElementById("cpr").innerHTML = cpr;
+     
     document.getElementById("uptwoon").innerHTML = uptwoon;
     
 }
